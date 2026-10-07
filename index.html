@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="كتالوج منتجات الكوراشي - إكسسوارات الأثاث ومستلزمات النجارة">
+  <title>كتالوج الكوراشي | El Korashy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <div class="brand-mark">EK</div>
+        <div>
+          <strong id="companyName">الكوراشي</strong>
+          <span>كتالوج المنتجات</span>
+        </div>
+      </a>
+      <a class="header-contact" id="headerWhatsApp" href="#" target="_blank" rel="noopener">تواصل واتساب</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow">كتالوج المنتجات</span>
+        <h1 id="heroTitle">اختار المنتج المناسب لمشروعك</h1>
+        <p id="heroDescription">تصفح منتجاتنا واكتشف التفاصيل، وللطلب أو الاستفسار تواصل معنا مباشرة.</p>
+        <a class="primary-button" id="heroWhatsApp" href="#" target="_blank" rel="noopener">اطلب عبر واتساب <span>←</span></a>
+      </div>
+    </section>
+
+    <section class="catalog container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">منتجاتنا</span>
+          <h2>تصفح الكتالوج</h2>
+        </div>
+        <span class="product-count" id="productCount"></span>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="ابحث عن اسم المنتج..." autocomplete="off">
+        </label>
+        <div class="category-list" id="categoryList" aria-label="تصفية حسب القسم"></div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌕</span>
+        <h3>لا توجد نتائج</h3>
+        <p>جرّب البحث باسم مختلف أو اختر قسمًا آخر.</p>
+      </div>
+    </section>
+
+    <section class="contact-band">
+      <div class="container contact-inner">
+        <div>
+          <span class="eyebrow">محتاج مساعدة؟</span>
+          <h2>تواصل معنا لمعرفة التفاصيل</h2>
+          <p>اسأل عن التوفر والمقاسات والأسعار قبل الطلب.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="primary-button" id="bottomWhatsApp" href="#" target="_blank" rel="noopener">راسلنا على واتساب</a>
+          <a class="secondary-button" id="phoneLink" href="tel:+201000000000">اتصل بنا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span id="footerCompany">الكوراشي</span>
+      <span>© <span id="year"></span> جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" id="floatingWhatsApp" href="#" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب</a>
+  <script src="script.js"></script>
+</body>
+</html>
